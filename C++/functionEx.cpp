@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-
+//function decarations
 void printHello();
 void greet(string name);
 int subtract();
-int add(int x, int y);
+int add(int, int);
 
 int main(){
     printHello();
