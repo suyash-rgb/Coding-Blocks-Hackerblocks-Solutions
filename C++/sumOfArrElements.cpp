@@ -8,13 +8,11 @@ int main()
     for(int i = 0; i < 5; i++) {
         cout << arr[i] << " ";
     }
-    int min = arr[0]; 
+    int sum = arr[0]; 
     for(int i = 1; i < 5; i++) {
-        if(arr[i] < min) {
-            min = arr[i];
-        }
+        sum += arr[i];
     }
-    cout<<endl<< "minimum element in the array: " << min;
+    cout<<endl<< "minimum element in the array: " << sum;
     cout << endl;
     return 0;
 }
