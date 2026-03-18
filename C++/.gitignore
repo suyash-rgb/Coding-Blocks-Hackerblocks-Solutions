@@ -1,1 +1,14 @@
-.exe
+# Compiled Binaries (Executables)
+*.exe
+*.out
+*.app
+
+# Intermediate Build Files
+*.o
+*.obj
+
+# IDE Settings (VS Code)
+.vscode/
+
+# Temporary / Log files
+*.log
