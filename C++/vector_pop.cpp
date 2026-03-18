@@ -34,8 +34,30 @@ int main(){
         cout<<a[i]<<" ";
     }
 
-   
+    cout<<a.front()<<endl; //first element of the vector
+    cout<<a.back()<<endl; //last element of the vector
+    cout<<a.at(2)<<endl; //element at index 2
 
+    cout<<endl<<"after inserting"<<endl;
+    a.insert(a.begin()+2, 100); //inserting 100 at index 2
+    for(int i=0; i<a.size(); i++){
+        cout<<a[i]<<" ";
+    }
     
+
+    cout<<endl<<"after erasing"<<endl;
+    a.erase(a.begin()+2); //erasing element at index 2
+    for(int i=0; i<a.size(); i++){
+        cout<<a[i]<<" ";
+    }
+
+    a.clear();
+    if(a.empty()){
+        cout<<endl<<"vector is empty"<<endl;
+    }
+    else{
+        cout<<endl<<"vector is not empty"<<endl;
+    }
+
     return 0;
 }
