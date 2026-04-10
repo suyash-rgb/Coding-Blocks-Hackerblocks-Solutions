@@ -17,11 +17,11 @@ int main() {
     for(int i = 0; i < a; i++) {
         if(i % 2 == 0) {
             for(int j = 0; j < c; j++) {
-                cout << arr[j][i] << " ";
+                cout << arr[i][j] << " ";
             }
         } else {
             for(int j = c - 1; j >= 0; j--) {
-                cout << arr[j][i] << " ";
+                cout << arr[i][j] << " ";
             }
         }
     }
